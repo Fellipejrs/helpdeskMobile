@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+ xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+ x:Class="helpdesk.AbrirChamadoPage"
+ Title="Abrir Chamado"
+ BackgroundColor="#F5F5F5">
+
+ <ScrollView>
+ <VerticalStackLayout Padding="25" Spacing="15">
+
+ <Label Text="Abrir Novo Chamado"
+ FontSize="22"
+ FontAttributes="Bold"
+ HorizontalOptions="Center" 
+ TextColor="Black"/>
+
+ <Entry x:Name="entryTitulo"
+ Placeholder="Título do chamado"
+ BackgroundColor="White"
+ HeightRequest="45" 
+        TextColor="Black"/>
+
+ <Editor x:Name="editorDescricao"
+ Placeholder="Descreva o problema"
+ BackgroundColor="White"
+ AutoSize="TextChanges"
+ HeightRequest="120"
+         TextColor="Black"/>
+
+ <Picker x:Name="pickerPrioridade"
+ Title="Selecione a prioridade"
+ BackgroundColor="White"
+         TextColor="Black">
+ <Picker.Items>
+ <x:String>Baixa</x:String>
+ <x:String>Média</x:String>
+ <x:String>Alta</x:String>
+ </Picker.Items>
+ </Picker>
+
+ <Button Text="Enviar Chamado"
+ BackgroundColor="#0078D7"
+ TextColor="White"
+ CornerRadius="10"
+ Clicked="OnEnviarChamadoClicked" />
+
+ </VerticalStackLayout>
+ </ScrollView>
+</ContentPage>

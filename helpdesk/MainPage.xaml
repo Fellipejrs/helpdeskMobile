@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+ xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+ x:Class="helpdesk.MainPage"
+ BackgroundColor="#F5F5F5"
+ Title="Login">
+
+ <VerticalStackLayout Padding="30" Spacing="15" VerticalOptions="Center">
+ <Label Text="Login do Sistema"
+ FontSize="24"
+ FontAttributes="Bold"
+ HorizontalOptions="Center"
+ TextColor="Black"/>
+
+ <Entry x:Name="entryUsuario"
+ Placeholder="Usuário"
+ Keyboard="Default"
+ BackgroundColor="White"
+ HeightRequest="45"
+ TextColor="Black"/>
+
+ <Entry x:Name="entrySenha"
+ Placeholder="Senha"
+ IsPassword="True"
+ BackgroundColor="White"
+ HeightRequest="45"
+ TextColor="Black"/>
+
+ <Button Text="Entrar"
+ BackgroundColor="#0078D7"
+ TextColor="White"
+ CornerRadius="10"
+ Clicked="OnLoginClicked" />
+
+
+        <Button Text="Cadastrar Usuário"
+	BackgroundColor="#6050DC"
+	TextColor="White"
+	CornerRadius="10"
+	HeightRequest="45"
+	Clicked="OnCadastrarUsuarioClicked" />
+    </VerticalStackLayout>
+</ContentPage>

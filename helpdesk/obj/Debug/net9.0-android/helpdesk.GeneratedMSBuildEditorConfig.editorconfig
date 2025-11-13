@@ -1,0 +1,73 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net9.0-android
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = helpdesk
+build_property.ProjectDir = C:\Users\Pichau\Desktop\Estudo Programação\faculdade\helpdesk\helpdesk\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/Pichau/Desktop/Estudo Programação/faculdade/helpdesk/helpdesk/AbrirChamadoPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = helpdesk.AbrirChamadoPage.xaml
+build_metadata.AdditionalFiles.TargetPath = AbrirChamadoPage.xaml
+build_metadata.AdditionalFiles.RelativePath = AbrirChamadoPage.xaml
+
+[C:/Users/Pichau/Desktop/Estudo Programação/faculdade/helpdesk/helpdesk/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = helpdesk.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/Pichau/Desktop/Estudo Programação/faculdade/helpdesk/helpdesk/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = helpdesk.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/Pichau/Desktop/Estudo Programação/faculdade/helpdesk/helpdesk/Cadastro.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = helpdesk.Cadastro.xaml
+build_metadata.AdditionalFiles.TargetPath = Cadastro.xaml
+build_metadata.AdditionalFiles.RelativePath = Cadastro.xaml
+
+[C:/Users/Pichau/Desktop/Estudo Programação/faculdade/helpdesk/helpdesk/Home.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = helpdesk.Home.xaml
+build_metadata.AdditionalFiles.TargetPath = Home.xaml
+build_metadata.AdditionalFiles.RelativePath = Home.xaml
+
+[C:/Users/Pichau/Desktop/Estudo Programação/faculdade/helpdesk/helpdesk/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = helpdesk.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/Pichau/Desktop/Estudo Programação/faculdade/helpdesk/helpdesk/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = helpdesk.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/Pichau/Desktop/Estudo Programação/faculdade/helpdesk/helpdesk/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = helpdesk.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/Pichau/Desktop/Estudo Programação/faculdade/helpdesk/helpdesk/VerChamado.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = helpdesk.VerChamado.xaml
+build_metadata.AdditionalFiles.TargetPath = VerChamado.xaml
+build_metadata.AdditionalFiles.RelativePath = VerChamado.xaml
