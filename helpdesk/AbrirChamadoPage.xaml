@@ -27,7 +27,18 @@
  HeightRequest="120"
          TextColor="Black"/>
 
- <Picker x:Name="pickerPrioridade"
+<Picker x:Name="pickerCategoria"
+ Title="Selecione a categoria"
+ BackgroundColor="White"
+ TextColor="Black">
+    <Picker.Items>
+        <x:String>Hardware</x:String>
+        <x:String>Software</x:String>
+        <x:String>Outro</x:String>
+    </Picker.Items>
+</Picker>
+
+            <Picker x:Name="pickerPrioridade"
  Title="Selecione a prioridade"
  BackgroundColor="White"
          TextColor="Black">

@@ -6,51 +6,66 @@ namespace helpdesk
 {
     public partial class Cadastro : ContentPage
     {
+        private readonly HttpClient _client;
+
         public Cadastro()
         {
             InitializeComponent();
+
+            var handler = new HttpClientHandler
+            {
+                ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => true
+            };
+            _client = new HttpClient(handler);
+
+            _client.BaseAddress = new Uri("http://localhost:5000");
         }
+
         public async void OnCadastrarClicked(object sender, EventArgs e)
         {
             string nome = entryNome.Text;
             string email = entryEmail.Text;
             string senha = entrySenha.Text;
-            string tipo = pickerTipo.SelectedItem?.ToString() ?? string.Empty;
-            bool ativo = switchAtivo.IsToggled;
+            string tipoSelecionado = pickerTipo.SelectedItem?.ToString() ?? string.Empty;
 
             if (string.IsNullOrWhiteSpace(nome) ||
                 string.IsNullOrWhiteSpace(email) ||
                 string.IsNullOrWhiteSpace(senha) ||
-                string.IsNullOrWhiteSpace(tipo))
+                string.IsNullOrWhiteSpace(tipoSelecionado))
             {
                 await DisplayAlert("Erro", "Preencha todos os campos antes de cadastrar.", "OK");
                 return;
             }
 
+            string role = tipoSelecionado.ToLower() switch
+            {
+                "administrador" => "tecnico",
+                "usuario" => "usuario",
+                _ => "usuario"
+            };
+
             var usuario = new
             {
-                nome,
-                email,
-                senha,
-                tipo,
-                ativo
+                name = nome,
+                email = email,
+                senha = senha,
+                role = role
             };
 
             try
             {
-                var handler = new HttpClientHandler
-                {
-                    ServerCertificateCustomValidationCallback = (message, cert, chain, errors) => true
-                };
-
-                using var client = new HttpClient();
-                client.BaseAddress = new Uri("https://10.0.2.2:7205");
-
-                var response = await client.PostAsJsonAsync("/api/Auth/registrar", usuario);
+                var response = await _client.PostAsJsonAsync("/api/Auth/registrar", usuario);
 
                 if (response.IsSuccessStatusCode)
                 {
                     await DisplayAlert("Sucesso", "Usuário cadastrado com sucesso!", "OK");
+
+                    entryNome.Text = string.Empty;
+                    entryEmail.Text = string.Empty;
+                    entrySenha.Text = string.Empty;
+                    pickerTipo.SelectedIndex = -1;
+                    switchAtivo.IsToggled = true;
+
                     await Navigation.PushAsync(new MainPage());
                 }
                 else
@@ -63,13 +78,6 @@ namespace helpdesk
             {
                 await DisplayAlert("Erro", $"Erro de conexão: {ex.Message}", "OK");
             }
-
-            entryNome.Text = string.Empty;
-            entryEmail.Text = string.Empty;
-            entrySenha.Text = string.Empty;
-            pickerTipo.SelectedIndex = -1;
-            switchAtivo.IsToggled = true;
         }
-
     }
 }
