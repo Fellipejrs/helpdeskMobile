@@ -22,7 +22,7 @@ namespace helpdesk
         {
             InitializeComponent();
 
-            _ = TestarToken();
+            //_ = TestarToken();
 
             var handler = new HttpClientHandler
             {
@@ -64,7 +64,6 @@ namespace helpdesk
             {
                 int userId = 1; // Temporário
 
-                // 🔥 AJUSTE: Usar os nomes da nova estrutura
                 var novoChamado = new
                 {
                     titulo = titulo,

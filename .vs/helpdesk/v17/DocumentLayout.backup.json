@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Pichau\\Documents\\GitHub\\helpdeskMobile\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8D066036-B6FD-4883-A105-256C5B8088DE}|helpdesk\\helpdesk.csproj|c:\\users\\pichau\\documents\\github\\helpdeskmobile\\helpdesk\\cadastro.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D066036-B6FD-4883-A105-256C5B8088DE}|helpdesk\\helpdesk.csproj|solutionrelative:helpdesk\\cadastro.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D066036-B6FD-4883-A105-256C5B8088DE}|helpdesk\\helpdesk.csproj|c:\\users\\pichau\\documents\\github\\helpdeskmobile\\helpdesk\\verchamado.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8D066036-B6FD-4883-A105-256C5B8088DE}|helpdesk\\helpdesk.csproj|solutionrelative:helpdesk\\verchamado.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D066036-B6FD-4883-A105-256C5B8088DE}|helpdesk\\helpdesk.csproj|c:\\users\\pichau\\documents\\github\\helpdeskmobile\\helpdesk\\cadastro.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{8D066036-B6FD-4883-A105-256C5B8088DE}|helpdesk\\helpdesk.csproj|solutionrelative:helpdesk\\cadastro.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{8D066036-B6FD-4883-A105-256C5B8088DE}|helpdesk\\helpdesk.csproj|c:\\users\\pichau\\documents\\github\\helpdeskmobile\\helpdesk\\verchamado.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D066036-B6FD-4883-A105-256C5B8088DE}|helpdesk\\helpdesk.csproj|solutionrelative:helpdesk\\verchamado.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8D066036-B6FD-4883-A105-256C5B8088DE}|helpdesk\\helpdesk.csproj|c:\\users\\pichau\\documents\\github\\helpdeskmobile\\helpdesk\\globalxmlns.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8D066036-B6FD-4883-A105-256C5B8088DE}|helpdesk\\helpdesk.csproj|solutionrelative:helpdesk\\globalxmlns.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8D066036-B6FD-4883-A105-256C5B8088DE}|helpdesk\\helpdesk.csproj|c:\\users\\pichau\\documents\\github\\helpdeskmobile\\helpdesk\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{8D066036-B6FD-4883-A105-256C5B8088DE}|helpdesk\\helpdesk.csproj|solutionrelative:helpdesk\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D066036-B6FD-4883-A105-256C5B8088DE}|helpdesk\\helpdesk.csproj|c:\\users\\pichau\\documents\\github\\helpdeskmobile\\helpdesk\\home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8D066036-B6FD-4883-A105-256C5B8088DE}|helpdesk\\helpdesk.csproj|solutionrelative:helpdesk\\home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,40 +34,55 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Cadastro.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\GitHub\\helpdeskMobile\\helpdesk\\Cadastro.xaml.cs",
-              "RelativeDocumentMoniker": "helpdesk\\Cadastro.xaml.cs",
-              "ToolTip": "C:\\Users\\Pichau\\Documents\\GitHub\\helpdeskMobile\\helpdesk\\Cadastro.xaml.cs",
-              "RelativeToolTip": "helpdesk\\Cadastro.xaml.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Home.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\GitHub\\helpdeskMobile\\helpdesk\\Home.xaml.cs",
+              "RelativeDocumentMoniker": "helpdesk\\Home.xaml.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\GitHub\\helpdeskMobile\\helpdesk\\Home.xaml.cs",
+              "RelativeToolTip": "helpdesk\\Home.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T19:31:29.241Z",
+              "WhenOpened": "2025-11-17T00:36:57.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Home.xaml",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\GitHub\\helpdeskMobile\\helpdesk\\Home.xaml",
+              "RelativeDocumentMoniker": "helpdesk\\Home.xaml",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\GitHub\\helpdeskMobile\\helpdesk\\Home.xaml",
+              "RelativeToolTip": "helpdesk\\Home.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-17T00:36:50.547Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Cadastro.xaml",
-              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\GitHub\\helpdeskMobile\\helpdesk\\Cadastro.xaml",
-              "RelativeDocumentMoniker": "helpdesk\\Cadastro.xaml",
-              "ToolTip": "C:\\Users\\Pichau\\Documents\\GitHub\\helpdeskMobile\\helpdesk\\Cadastro.xaml",
-              "RelativeToolTip": "helpdesk\\Cadastro.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-11-16T19:31:26.647Z"
+              "Title": "VerChamado.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\GitHub\\helpdeskMobile\\helpdesk\\VerChamado.xaml.cs",
+              "RelativeDocumentMoniker": "helpdesk\\VerChamado.xaml.cs",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\GitHub\\helpdeskMobile\\helpdesk\\VerChamado.xaml.cs",
+              "RelativeToolTip": "helpdesk\\VerChamado.xaml.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAQwC8AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T23:55:04.71Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GlobalXmlns.cs",
-              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\GitHub\\helpdeskMobile\\helpdesk\\GlobalXmlns.cs",
-              "RelativeDocumentMoniker": "helpdesk\\GlobalXmlns.cs",
-              "ToolTip": "C:\\Users\\Pichau\\Documents\\GitHub\\helpdeskMobile\\helpdesk\\GlobalXmlns.cs",
-              "RelativeToolTip": "helpdesk\\GlobalXmlns.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T19:31:23.697Z"
+              "DocumentIndex": 0,
+              "Title": "VerChamado.xaml",
+              "DocumentMoniker": "C:\\Users\\Pichau\\Documents\\GitHub\\helpdeskMobile\\helpdesk\\VerChamado.xaml",
+              "RelativeDocumentMoniker": "helpdesk\\VerChamado.xaml",
+              "ToolTip": "C:\\Users\\Pichau\\Documents\\GitHub\\helpdeskMobile\\helpdesk\\VerChamado.xaml",
+              "RelativeToolTip": "helpdesk\\VerChamado.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-16T23:55:02.604Z",
+              "EditorCaption": ""
             }
           ]
         }

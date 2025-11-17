@@ -6,25 +6,71 @@
  Title="Ver Chamados"
  BackgroundColor="#F5F5F5">
 
- <VerticalStackLayout Padding="20" Spacing="10">
- <Label Text="Chamados" FontSize="22" FontAttributes="Bold" HorizontalOptions="Center" TextColor="Black" />
+    <VerticalStackLayout Padding="20" Spacing="10">
 
- <CollectionView x:Name="collectionChamados" SelectionMode="Single" SelectionChanged="OnSelectionChanged">
- <CollectionView.ItemTemplate>
- <DataTemplate>
- <Frame Margin="0,4" CornerRadius="8" HasShadow="True" BackgroundColor="White">
- <VerticalStackLayout Padding="10">
- <Label Text="{Binding Titulo}" FontAttributes="Bold" FontSize="16" TextColor="Black" />
- <HorizontalStackLayout Spacing="10">
- <Label Text="{Binding Prioridade}" FontSize="12" TextColor="Black" />
- <Label Text="{Binding Data}" FontSize="12" HorizontalOptions="EndAndExpand"  TextColor="Black"/>
- </HorizontalStackLayout>
- <Label Text="{Binding Descricao}" LineBreakMode="TailTruncation" MaxLines="2" FontSize="13" TextColor="Black"/>
- </VerticalStackLayout>
- </Frame>
- </DataTemplate>
- </CollectionView.ItemTemplate>
- </CollectionView>
- </VerticalStackLayout>
+        <Label Text="Meus Chamados" FontSize="22" FontAttributes="Bold" HorizontalOptions="Center" TextColor="Black" />
+
+        <Button Text="Recarregar pagina" 
+            Clicked="OnRecarregarClicked"
+            BackgroundColor="#0078D7"
+            TextColor="White"
+            CornerRadius="10"
+            HeightRequest="40"
+            HorizontalOptions="Start" />
+
+        <Button Text="Adicionar novo chamado" 
+            Clicked="OnAbrirChamadoClicked"
+            BackgroundColor="#00B294"
+            TextColor="White"
+            CornerRadius="10"
+            HeightRequest="40"
+            HorizontalOptions="Start" />
+
+        <CollectionView x:Name="collectionChamados" ItemsSource="{Binding Chamados}" SelectionMode="Single" SelectionChanged="OnSelectionChanged">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <Frame Margin="0,4" CornerRadius="8" HasShadow="True" BackgroundColor="White" Padding="15">
+                        <VerticalStackLayout Spacing="8">
+                            <Label Text="{Binding Titulo}" FontAttributes="Bold" FontSize="16" TextColor="Black" />
+
+                            <Grid ColumnDefinitions="*,*" RowDefinitions="Auto,Auto">
+                                <Label Grid.Row="0" Grid.Column="0"
+                                   Text="{Binding Prioridade}"
+                                   FontSize="12"
+                                   TextColor="Black"/>
+
+                                <Label Grid.Row="0" Grid.Column="1"
+                                   Text="{Binding Status}"
+                                   FontSize="12"
+                                   HorizontalOptions="End"
+                                   TextColor="Black"/>
+
+                                <Label Grid.Row="1" Grid.Column="0"
+                                   Text="{Binding Data}"
+                                   FontSize="11"
+                                   TextColor="#666666"/>
+
+                                <Label FontSize="11" HorizontalOptions="End" TextColor="#666666">
+                                    <Label.FormattedText>
+                                        <FormattedString>
+                                            <Span Text="ID: " />
+                                            <Span Text="{Binding Id}" />
+                                        </FormattedString>
+                                    </Label.FormattedText>
+                                </Label>
+                            </Grid>
+
+                            <Label Text="{Binding Descricao}" 
+                               LineBreakMode="TailTruncation" 
+                               MaxLines="2" 
+                               FontSize="13" 
+                               TextColor="#444444"/>
+                        </VerticalStackLayout>
+                    </Frame>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+
+    </VerticalStackLayout>
 
 </ContentPage>

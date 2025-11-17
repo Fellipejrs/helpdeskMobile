@@ -35,15 +35,11 @@ namespace helpdesk
 
                 if (response.IsSuccessStatusCode)
                 {
-                    // 🔥 CORREÇÃO: Ler a resposta como string primeiro para debug
                     var jsonString = await response.Content.ReadAsStringAsync();
-                    await DisplayAlert("DEBUG LOGIN", $"Resposta: {jsonString}", "OK");
 
-                    // Desserializar a resposta
                     using var jsonDoc = JsonDocument.Parse(jsonString);
                     var root = jsonDoc.RootElement;
 
-                    // 🔥 CORREÇÃO: Pegar o token da resposta
                     if (root.TryGetProperty("token", out var tokenProperty))
                     {
                         var token = tokenProperty.GetString();
